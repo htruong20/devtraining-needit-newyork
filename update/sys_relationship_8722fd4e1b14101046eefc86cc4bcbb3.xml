@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_relationship">
+    <sys_relationship action="INSERT_OR_UPDATE">
+        <advanced>false</advanced>
+        <apply_to/>
+        <basic_apply_to>x_58872_needit_needit</basic_apply_to>
+        <basic_query_from>task</basic_query_from>
+        <insert_callback/>
+        <name>NeedIt Tasks</name>
+        <query_from/>
+        <query_with><![CDATA[(function refineQuery(current, parent) {
+
+	current.addQuery('parent', parent.sys_id);
+	current.addQuery('short_description', 'NeedIt task');
+	current.addQuery('sys_class_name', 'task');
+	current.query();
+	
+})(current, parent);]]></query_with>
+        <reference_field>assigned_to</reference_field>
+        <related_list/>
+        <simple_reference>false</simple_reference>
+        <sys_class_name>sys_relationship</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-22 06:56:15</sys_created_on>
+        <sys_id>8722fd4e1b14101046eefc86cc4bcbb3</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>NeedIt Tasks</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_relationship_8722fd4e1b14101046eefc86cc4bcbb3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-22 08:43:20</sys_updated_on>
+    </sys_relationship>
+    <sys_translated_text action="delete_multiple" query="documentkey=8722fd4e1b14101046eefc86cc4bcbb3"/>
+</record_update>
